@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" /><!-- pre-MVP: remove at real launch -->
+
+  <title>ZuZu — The relationship infrastructure for artists and their fans</title>
+  <meta name="description" content="ZuZu is where independent artists are discovered by new fans, the ones who love them get closer, and the artist finally owns who their fans are — names and contact they keep, not numbers on someone else's dashboard." />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ZuZu — Your audience should belong to you" />
+  <meta property="og:description" content="Get discovered, get closer to the fans who love you, and own that relationship for good. The relationship infrastructure for artists and their fans." />
+  <meta property="og:image" content="https://zuzu.music/zuzu-social.png" />
+  <meta property="og:url" content="https://zuzu.music/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ZuZu — Your audience should belong to you" />
+  <meta name="twitter:description" content="The relationship infrastructure for artists and their fans. Join the waitlist." />
+  <meta name="twitter:image" content="https://zuzu.music/zuzu-social.png" />
+
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#f7f3ee" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-role="fan">
+  <!-- Grain + gradient atmosphere -->
+  <div class="atmosphere" aria-hidden="true">
+    <div class="mosaic"></div>
+    <div class="grain"></div>
+  </div>
+
+  <!-- Sticky top bar with the persistent role switch -->
+  <header class="topbar" data-topbar>
+    <div class="topbar__inner">
+      <a class="brand" href="#top" aria-label="ZuZu home">
+        <img class="brand__mark" src="zuzu-mark.png" alt="" />
+        <span class="brand__word">ZuZu</span>
+      </a>
+      <div class="topbar__right">
+        <span class="rolebar__label">I’m here as a</span>
+        <div class="seg" role="group" aria-label="View ZuZu as an artist or a fan" data-role-toggle>
+          <button type="button" class="seg__btn" data-role-set="fan" aria-pressed="true">fan</button>
+          <button type="button" class="seg__btn" data-role-set="artist" aria-pressed="false">artist</button>
+          <span class="seg__pill" aria-hidden="true"></span>
+        </div>
+        <a class="topbar__cta" href="#waitlist">Join the waitlist</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">Coming soon · For independent artists &amp; the fans who show up</p>
+      <h1 class="hero__title">
+        <span class="r-artist">Your audience should<br />belong to you.</span>
+        <span class="r-fan">Get closer than<br />a follow.</span>
+      </h1>
+      <div class="hero__ledes">
+        <p class="hero__lede r-artist">
+          ZuZu is the relationship infrastructure for independent artists and their fans. New fans
+          discover your music, the ones who love it get closer — and you finally <strong>own who they
+          are</strong>: real names and contact you keep, not numbers on someone else’s dashboard.
+        </p>
+        <p class="hero__lede r-fan">
+          ZuZu gets you inside with the artists you love — <strong>first dibs on tickets, unreleased
+          demos, members-first merch, secret shows, and a direct line to them</strong>. Everything a
+          follow was never going to give you.
+        </p>
+      </div>
+
+      <form class="waitlist-form waitlist-form--hero" data-waitlist novalidate>
+        <div class="field">
+          <input class="field__input" type="email" name="email" inputmode="email" autocomplete="email"
+                 placeholder="you@email.com" aria-label="Email address" required />
+          <button class="btn" type="submit" data-cta>Join the waitlist</button>
+        </div>
+        <p class="waitlist-form__note" data-note>
+          Free. Get first access at launch — and reserve your fan handle before anyone else.
+        </p>
+        <p class="waitlist-form__status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- PROBLEM (role-aware) -->
+    <section class="problem">
+      <!-- Artist framing -->
+      <div class="r-artist">
+        <h2 class="section-kicker">The gap nobody built for</h2>
+        <p class="problem__lead">
+          Fans spend billions on the artists they love. Almost none of it reaches the artist —
+          and the fans spending the most are invisible.
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__num">97%</span>
+            <span class="stat__cap">of artists earn under <strong>$1,000 a year</strong> from streaming</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">$0.004</span>
+            <span class="stat__cap">the average payout <strong>per stream</strong> on the major platforms</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">2%</span>
+            <span class="stat__cap">of your listeners drive <strong>20% of your streams</strong> — and you can’t tell who they are</span>
+          </div>
+        </div>
+        <blockquote class="pullquote">
+          Your biggest fans are already in there. You just can’t see them, reach them, or keep them.
+          <strong>That’s the one thing ZuZu fixes.</strong>
+        </blockquote>
+      </div>
+
+      <!-- Fan framing -->
+      <div class="r-fan">
+        <h2 class="section-kicker">What’s waiting on the inside</h2>
+        <p class="problem__lead">
+          A follow gets you posts. This gets you <em>in</em> — to the artists you already love.
+        </p>
+        <div class="perks">
+          <div class="perk">
+            <h3 class="perk__title">Tickets first</h3>
+            <p>First crack at shows and presales, before they ever hit general sale.</p>
+          </div>
+          <div class="perk">
+            <h3 class="perk__title">Unreleased music</h3>
+            <p>Demos, edits, and b-sides — the songs that never make it to streaming.</p>
+          </div>
+          <div class="perk">
+            <h3 class="perk__title">Members-first merch</h3>
+            <p>Drops and limited runs you get to see and grab before anyone else.</p>
+          </div>
+          <div class="perk">
+            <h3 class="perk__title">A direct line</h3>
+            <p>Actually talk to the artist — and the other people who get it like you do.</p>
+          </div>
+          <div class="perk">
+            <h3 class="perk__title">Secret shows</h3>
+            <p>The small, intimate rooms only the people on the inside ever hear about.</p>
+          </div>
+          <div class="perk">
+            <h3 class="perk__title">Founding-fan status</h3>
+            <p>A permanent mark that you were here before the world caught on.</p>
+          </div>
+        </div>
+        <blockquote class="pullquote">
+          All of it, from the artists <em>you</em> choose. <strong>Not a face in the crowd — a name they know.</strong>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how">
+      <h2 class="section-title">How ZuZu works</h2>
+      <p class="section-sub r-artist">
+        Three steps turn anonymous listeners into fans you know, can reach, and keep — for good.
+      </p>
+      <p class="section-sub r-fan">
+        Three steps get you closer to the artists you love than a follow ever could.
+      </p>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__n">01</span>
+          <div class="step__body">
+            <h3 class="step__title r-artist">Get discovered</h3>
+            <h3 class="step__title r-fan">Discover</h3>
+            <p class="r-artist">New fans find your music on ZuZu and follow the sound itself — not whatever an algorithm decides to push. Discovery that brings you people, not just plays.</p>
+            <p class="r-fan">Find artists before everyone else and follow the sound you love. Real discovery, not whatever the feed is selling today.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__n">02</span>
+          <div class="step__body">
+            <h3 class="step__title">Get closer</h3>
+            <p class="r-artist">The fans who love your music most step into your world — early access to drops, shows, and the nights that sell out — and back you directly to be there.</p>
+            <p class="r-fan">Step inside the ones you love most: early tickets, unreleased demos, members-first merch, and the secret shows that vanish before they’re ever announced.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__n">03</span>
+          <div class="step__body">
+            <h3 class="step__title r-artist">Own the relationship</h3>
+            <h3 class="step__title r-fan">Be the one who was there first</h3>
+            <p class="r-artist">This is the part no other platform will give you. When a fan steps closer, they choose to be known to you — so their name, contact, and history become <strong>yours</strong>. Export them any time. Leave ZuZu tomorrow and you keep every one. Plus one dashboard: who’s showing up, and what you’re earning.</p>
+            <p class="r-fan">Hold founding status with the artists you love — a permanent mark that you were there first, and the perks that keep coming with being one of the originals.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- DIFFERENTIATION (role-aware) -->
+    <section class="versus">
+      <!-- Artist framing -->
+      <div class="r-artist">
+        <h2 class="section-title">Not another tool to keep fed</h2>
+        <p class="section-sub">
+          Plenty of platforms touch one piece of this. ZuZu is the only one that does all of it at once.
+        </p>
+        <ul class="versus__list">
+          <li><span class="versus__name">Spotify</span> pays you fractions of a cent and keeps your fans a secret.</li>
+          <li><span class="versus__name">Patreon</span> turns you into a content factory and only rents you the relationship.</li>
+          <li><span class="versus__name">A mailing list</span> can’t help a single new fan find you.</li>
+          <li class="versus__win"><span class="versus__name">ZuZu</span> does the four together: discovery, direct support, knowing your fans, and owning that relationship for good.</li>
+        </ul>
+      </div>
+
+      <!-- Fan framing -->
+      <div class="r-fan">
+        <h2 class="section-title">More than a follow. More than a ticket.</h2>
+        <p class="section-sub">
+          You already stream it, follow it, and buy the merch. Here’s what all of that never got you.
+        </p>
+        <ul class="versus__list">
+          <li><span class="versus__name">A follow</span> gets you their posts. <strong>ZuZu</strong> gets you in the room.</li>
+          <li><span class="versus__name">A stream</span> gets you the song. <strong>ZuZu</strong> gets you the demo before it’s a song.</li>
+          <li><span class="versus__name">A ticket</span> gets you a seat. <strong>ZuZu</strong> gets you the secret show.</li>
+          <li class="versus__win"><span class="versus__name">A like</span> gets you nowhere. <strong>ZuZu</strong> gets you known — founding status from day one.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WAITLIST -->
+    <section class="waitlist" id="waitlist">
+      <div class="waitlist__inner">
+        <h2 class="waitlist__title">Be early.</h2>
+
+        <p class="waitlist__sub r-artist">
+          We’re onboarding a first group of founding artists. Leave your email and we’ll bring you in
+          first when we open — with founding-artist perks and first pick of your @handle.
+        </p>
+        <p class="waitlist__sub r-fan">
+          ZuZu is being built now. Leave your email to get first access when we open the doors — and to
+          reserve your fan handle before anyone else.
+        </p>
+
+        <form class="waitlist-form waitlist-form--main" data-waitlist novalidate>
+          <div class="field">
+            <input class="field__input" type="email" name="email" inputmode="email" autocomplete="email"
+                   placeholder="you@email.com" aria-label="Email address" required />
+            <button class="btn" type="submit" data-cta>Join the waitlist</button>
+          </div>
+          <p class="waitlist-form__note">No spam, ever. Just word when there’s a door to open.</p>
+          <p class="waitlist-form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <img class="footer__mark" src="zuzu-mark.png" alt="" />
+      <span>ZuZu</span>
+    </div>
+    <p class="footer__tagline">We win because you win.</p>
+    <p class="footer__legal">
+      © <span data-year>2026</span> ZuZu / Starfish Social Media, Inc. · Building in the open.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
