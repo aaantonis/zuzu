@@ -129,12 +129,12 @@ em { font-style: italic; }
 .mosaic {
   position: absolute;
   inset: 0;
-  background: url("grad-light.png") center / cover no-repeat;
+  background: url("assets/grad-light.png") center / cover no-repeat;
   image-rendering: pixelated;
   opacity: .3;
 }
 :root[data-theme="dark"] .mosaic {
-  background-image: url("grad-dark.png");
+  background-image: url("assets/grad-dark.png");
   opacity: .35;
 }
 
@@ -142,7 +142,7 @@ em { font-style: italic; }
 .grain {
   position: absolute;
   inset: 0;
-  background: url("noise.png") repeat;
+  background: url("assets/noise.png") repeat;
   background-size: 180px 180px;
   opacity: var(--grain-opacity);
 }
